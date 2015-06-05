@@ -3,6 +3,6 @@ require 'sinatra-websocket'
 
 class ClientApp < Sinatra::Base
   get '/' do
-    "hello world"
+    erb :index
   end
 end
