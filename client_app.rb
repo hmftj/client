@@ -22,6 +22,8 @@ class ClientApp < Sinatra::Base
           handle_devicemotion(event[:data])
         when 'deviceorientation'
           handle_deviceorientation(event[:data])
+        when 'joystickmove'
+          p event[:data]
         end
       end
       ws.onclose do
